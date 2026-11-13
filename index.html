@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Java Programming Quiz</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+
+    <button id="themeToggle" class="theme-btn">
+        🌙 Night Mode
+    </button>
+
+
+    <main class="container">
+
+
+
+        <section id="landingPage" class="card landing-card">
+
+            <div class="icon">☕</div>
+
+            <h1>Java Programming Quiz</h1>
+
+            <p>
+                Test your basic knowledge about Java programming
+                through these 3 simple questions.
+            </p>
+
+            <button id="startBtn" class="main-btn">
+                Start Quiz
+            </button>
+
+        </section>
+
+
+
+
+        <section id="quizPage" class="card quiz-card hidden">
+
+            <div class="quiz-top">
+
+                <span id="questionNumber">
+                    Question 1 of 3
+                </span>
+
+                <span id="scoreDisplay">
+                    Score: 0
+                </span>
+
+            </div>
+
+
+            <div class="progress-container">
+
+                <div id="progressBar" class="progress-bar"></div>
+
+            </div>
+
+
+            <h2 id="question">
+                Question goes here
+            </h2>
+
+
+            <div id="choices" class="choices">
+            </div>
+
+
+            <button id="nextBtn" class="main-btn next-btn" disabled>
+                Next Question
+            </button>
+
+        </section>
+
+
+
+
+        <section id="resultPage" class="card result-card hidden">
+
+            <div class="result-icon">
+                🎉
+            </div>
+
+            <h1>Quiz Complete!</h1>
+
+            <p>Your final score is:</p>
+
+            <div id="finalScore" class="final-score">
+                0 / 3
+            </div>
+
+            <p id="resultMessage">
+                Good job!
+            </p>
+
+            <button id="restartBtn" class="main-btn">
+                Try Again
+            </button>
+
+        </section>
+
+    </main>
+
+
+
+
+    <div id="videoModal" class="video-modal">
+
+        <div class="video-container">
+
+            <button id="closeVideo" class="close-btn">
+                ×
+            </button>
+
+
+
+            <video id="quizVideo" controls playsinline>
+
+                <source src="quiz.mp4" type="video/mp4">
+
+                Your browser does not support video playback.
+
+            </video>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
